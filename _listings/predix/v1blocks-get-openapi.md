@@ -1,12 +1,13 @@
 ---
 swagger: "2.0"
-x-collection-name: Blockchain
+x-collection-name: Predix
 x-complete: 0
 info:
-  title: Blockchain Info Raw Block
-  description: Returns a single raw block.
+  title: Predix BlockChain Get Blocks
+  description: Get current blockchain root info
   version: 1.0.0
-host: blockchain.info
+host: predix-apphub-arcs-prod.run.aws-usw02-pr.ice.predix.io
+basePath: /
 schemes:
 - http
 produces:
@@ -14,23 +15,23 @@ produces:
 consumes:
 - application/json
 paths:
-  /rawblock/{block_hash}:
+  /v1/blocks:
     get:
-      summary: Raw Block
-      description: Returns a single raw block.
-      operationId: getRawBlock
-      x-api-path-slug: rawblockblock-hash-get
+      summary: Get Blocks
+      description: Get current blockchain root info
+      operationId: get-current-blockchain-root-info
+      x-api-path-slug: v1blocks-get
       parameters:
-      - in: path
-        name: block_hash
-        description: The block hash
-        type: string
-        format: string
+      - in: header
+        name: Authorization
+        description: access token
+      - in: header
+        name: predix-zone-id
+        description: tenantId
       responses:
         200:
           description: OK
       tags:
-      - Blockchain
       - Blocks
 x-streamrank:
   polling_total_time_average: 0

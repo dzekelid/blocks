@@ -7,11 +7,79 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgr
 x-kinRank: "9"
 x-alexaRank: "10000"
 tags: Blocks
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/blocks/master/_listings/sendgrid/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: SendGrid - Delete Suppression Blocks
+  x-api-slug: suppressionblocks-delete
+  description: "**This endpoint allows you to delete all email addresses on your blocks
+    list.**\n\nThere are two options for deleting blocked emails: \n\n1. You can delete
+    all blocked emails by setting `delete_all` to true in the request body. \n2. You
+    can delete some blocked emails by specifying the email addresses in an array in
+    the request body.\n\n[Blocks](https://sendgrid.com/docs/Glossary/blocks.html)
+    happen when your message was rejected for a reason related to the message, not
+    the recipient address. This can happen when your mail server IP address has been
+    added to a blacklist or blocked by an ISP, or if the message content is flagged
+    by a filter on the receiving server.\n\nFor more information, please see our [User
+    Guide](https://sendgrid.com/docs/User_Guide/Suppressions/blocks.html)."
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
+  humanURL: http://sendgrid.com
+  baseURL: https://api.sendgrid.com//v3
+  tags: API LIfeyclessss, Imports, Stack Network, Stack, Technology, SaaS, Emails,
+    Emails, Messages, Messages, Relative Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/blocks/master/_listings/sendgrid/suppressionblocks-delete-openapi.md
+- name: SendGrid - Get Suppression Blocks
+  x-api-slug: suppressionblocks-get
+  description: |-
+    **This endpoint allows you to retrieve a list of all email addresses that are currently on your blocks list.**
+
+    There are several causes for [blocked](https://sendgrid.com/docs/Glossary/blocks.html) emails: for example, your mail server IP address is on an ISP blacklist, or blocked by an ISP, or if the receiving server flags the message content.
+
+    For more information, please see our [User Guide](https://sendgrid.com/docs/User_Guide/Suppressions/blocks.html).
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
+  humanURL: http://sendgrid.com
+  baseURL: https://api.sendgrid.com//v3
+  tags: API LIfeyclessss, Imports, Stack Network, Stack, Technology, SaaS, Emails,
+    Emails, Messages, Messages, Relative Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/blocks/master/_listings/sendgrid/suppressionblocks-get-openapi.md
+- name: SendGrid - Delete Suppression Blocks Email
+  x-api-slug: suppressionblocksemail-delete
+  description: |-
+    **This endpoint allows you to delete a specific email address from your blocks list.**
+
+    [Blocks](https://sendgrid.com/docs/Glossary/blocks.html) happen when your message was rejected for a reason related to the message, not the recipient address. This can happen when your mail server IP address has been added to a blacklist or blocked by an ISP, or if the message content is flagged by a filter on the receiving server.
+
+    For more information, please see our [User Guide](https://sendgrid.com/docs/User_Guide/Suppressions/blocks.html).
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
+  humanURL: http://sendgrid.com
+  baseURL: https://api.sendgrid.com//v3
+  tags: API LIfeyclessss, Imports, Stack Network, Stack, Technology, SaaS, Emails,
+    Emails, Messages, Messages, Relative Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/blocks/master/_listings/sendgrid/suppressionblocksemail-delete-openapi.md
+- name: SendGrid - Get Suppression Blocks Email
+  x-api-slug: suppressionblocksemail-get
+  description: |-
+    **This endpoint allows you to retrieve a specific email address from your blocks list.**
+
+    [Blocks](https://sendgrid.com/docs/Glossary/blocks.html) happen when your message was rejected for a reason related to the message, not the recipient address. This can happen when your mail server IP address has been added to a blacklist or blocked by an ISP, or if the message content is flagged by a filter on the receiving server.
+
+    For more information, please see our [User Guide](https://sendgrid.com/docs/User_Guide/Suppressions/blocks.html).
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
+  humanURL: http://sendgrid.com
+  baseURL: https://api.sendgrid.com//v3
+  tags: API LIfeyclessss, Imports, Stack Network, Stack, Technology, SaaS, Emails,
+    Emails, Messages, Messages, Relative Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/blocks/master/_listings/sendgrid/suppressionblocksemail-get-openapi.md
 x-common:
 - type: x--net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html

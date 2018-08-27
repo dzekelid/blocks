@@ -1,12 +1,13 @@
 ---
 swagger: "2.0"
-x-collection-name: Blockchain
+x-collection-name: RipaEx
 x-complete: 0
 info:
-  title: Blockchain Info Raw Block
-  description: Returns a single raw block.
+  title: RipaEx Blocks Get
+  description: Get block by id.
   version: 1.0.0
-host: blockchain.info
+host: api.ripaex.io
+basePath: /
 schemes:
 - http
 produces:
@@ -14,18 +15,15 @@ produces:
 consumes:
 - application/json
 paths:
-  /rawblock/{block_hash}:
+  /api/blocks/get:
     get:
-      summary: Raw Block
-      description: Returns a single raw block.
-      operationId: getRawBlock
-      x-api-path-slug: rawblockblock-hash-get
+      summary: Blocks Get
+      description: Get block by id.
+      operationId: blocks.getBlock
+      x-api-path-slug: apiblocksget-get
       parameters:
-      - in: path
-        name: block_hash
-        description: The block hash
-        type: string
-        format: string
+      - in: query
+        name: id
       responses:
         200:
           description: OK

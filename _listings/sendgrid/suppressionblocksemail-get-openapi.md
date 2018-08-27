@@ -1,8 +1,15 @@
+---
 swagger: "2.0"
 x-collection-name: SendGrid
-x-complete: 1
+x-complete: 0
 info:
-  title: SendGrid
+  title: SendGrid Get Suppression Blocks Email
+  description: |-
+    **This endpoint allows you to retrieve a specific email address from your blocks list.**
+
+    [Blocks](https://sendgrid.com/docs/Glossary/blocks.html) happen when your message was rejected for a reason related to the message, not the recipient address. This can happen when your mail server IP address has been added to a blacklist or blocked by an ISP, or if the message content is flagged by a filter on the receiving server.
+
+    For more information, please see our [User Guide](https://sendgrid.com/docs/User_Guide/Suppressions/blocks.html).
   version: 1.0.0
 host: api.sendgrid.com
 basePath: /v3
@@ -123,3 +130,17 @@ paths:
       - Suppression
       - Blocks
       - Email
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---

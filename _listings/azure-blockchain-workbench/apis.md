@@ -11,11 +11,31 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "7"
 x-alexaRank: ""
 tags: Blocks
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/blocks/master/_listings/azure-blockchain-workbench/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: Azure Blockchain Workbench REST API - Get Ledgers Connections Blocks
+  x-api-slug: apiv1ledgersconnectionsconnectionidblocks-get
+  description: Lists the blocks for a connected blockchain network.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-blockchain.png
+  humanURL: https://docs.microsoft.com/en-us/rest/api/azure-blockchain-workbench/
+  baseURL: https:////
+  tags: Blockchain, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/blocks/master/_listings/azure-blockchain-workbench/apiv1ledgersconnectionsconnectionidblocks-get-openapi.md
+- name: Azure Blockchain Workbench REST API - Get Ledgers Connections Blocks Blockid
+  x-api-slug: apiv1ledgersconnectionsconnectionidblocksblockid-get
+  description: Gets the block matching a specific block ID.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-blockchain.png
+  humanURL: https://docs.microsoft.com/en-us/rest/api/azure-blockchain-workbench/
+  baseURL: https:////
+  tags: Blockchain, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/blocks/master/_listings/azure-blockchain-workbench/apiv1ledgersconnectionsconnectionidblocksblockid-get-openapi.md
 x-common:
 - type: x-blog
   url: https://azure.microsoft.com/en-us/blog/topics/blockchain/
